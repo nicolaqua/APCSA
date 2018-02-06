@@ -16,6 +16,7 @@ public class SmileyFace extends Canvas
    public void paint( Graphics window )
    {
       smileyFace(window);
+      bodyandarms(window);
    }
 
    public void smileyFace( Graphics window )
@@ -24,20 +25,31 @@ public class SmileyFace extends Canvas
       window.drawString("SMILEY FACE LAB ", 35, 35);
 
       window.setColor(Color.GREEN);
-      window.fillOval( 105, 50, 200, 200 );
+      window.fillOval( 205, 50, 200, 200 );
 
       
       window.setColor(Color.BLACK);
-      window.fillOval( 125, 135, 25, 25 );
+      window.fillOval( 225, 135, 25, 25 );
      // window.fillOval( 310, 100, 50, 50 );
 		//add more code here
 
-      window.fillOval( 225, 135, 25, 25 );
+      window.fillOval( 325, 135, 25, 25 );
 
       window.setColor(Color.RED);
-      window.fillOval(240, 350, 200, 50);
+      window.fillOval(220, 150, 100, 25);
       
       window.setColor(Color.BLACK);
-      window.drawArc(310, 320, 200, 100, 0, -180);
+      window.drawArc(250, 160, 100, 50, 0, -180);
+      
+     
+   }
+   
+   public void bodyandarms ( Graphics window )
+   {
+   window.fillRect(150, 240, 250, 250);
+   
+   window.fillRect(250, 240, 250, 100);
+   window.fillRect(50, 240, 250, 100);
+   
    }
 }
